@@ -3,19 +3,20 @@
 }
 
 body {
-  background-color: black;
   height: 100vh;
-  background-image: url(images/wallpaper002.jpg);
-  background-repeat: no-repeat;
-  background-position: center top;
+  background: black url(images/wallpaper002.jpg) no-repeat fixed center center;
   background-size: cover;
 }
 
 main {
   background-color: white;
-  width: 400px;
+  max-width: 400px;
   padding: 10px;
   margin: auto;
   border-radius: 15px;
   border: 1px solid rgba(0, 0, 139, 0.445);
+}
+
+main p {
+  padding: 5px;
 }
