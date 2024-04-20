@@ -37,6 +37,7 @@ header > h1 {
 
 header p {
   font-weight: 200;
+  padding-top: 20px;
 }
 
 header a,
