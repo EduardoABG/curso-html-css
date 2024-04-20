@@ -1,0 +1,39 @@
+body {
+  margin: 10px;
+}
+
+h1 {
+  background-color: lightgreen;
+  width: 380px;
+  height: 42px;
+
+  /* border-width: 10px;
+  border-style: solid;
+  border-color: black; */
+  border: 10px solid black;
+  border-radius: 15px;
+  padding: 5px;
+  margin: 15px auto;
+
+  /* margin: auto; */
+  /* margin auto centraliza */
+  /* outline-width: 5px;
+  outline-style: dashed;
+  outline-color: blueviolet; */
+
+  outline: 5px dashed blueviolet;
+}
+
+p {
+  margin-top: 10px;
+}
+
+a {
+  padding: 2px;
+  /* border-width: 5px;
+  border-style: solid;
+  border-color: red; */
+  border: 5px solid red;
+  border-radius: 6px;
+  text-decoration-line: none;
+}
