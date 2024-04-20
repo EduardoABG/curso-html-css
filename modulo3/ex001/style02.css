@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+}
+
+div.square {
+  height: 200px;
+  border: 1px solid black;
+  margin: 5px;
+  border-radius: 10px;
+  background-image: url(images/wallpaper002.jpg);
+}
+
+div#s1 {
+  background-position: left top;
+}
+div#s2 {
+  background-position: left center;
+}
+div#s3 {
+  background-position: right bottom;
+}
+div#s4 {
+  background-position: center center;
+}
