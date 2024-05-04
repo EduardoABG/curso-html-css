@@ -3,8 +3,8 @@
 }
 
 #container {
-  background-size: cover;
   background: black url(images/espaco.jpg) no-repeat fixed center center;
+  background-size: cover;
   position: relative;
   height: 100vh;
 }

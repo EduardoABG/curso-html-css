@@ -42,7 +42,6 @@ header p {
 
 header a,
 footer a {
-  font-weight: bold;
   text-decoration: none;
   color: white;
   padding: 4px;
