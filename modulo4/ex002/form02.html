@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      label {
+        font-size: x-large;
+      }
+
+      #send,
+      #clear {
+        width: 80px;
+        height: 45px;
+        font-size: 15pt;
+        margin-left: 10px;
+      }
+
+      input {
+        height: 20px;
+        font-size: larger;
+      }
+
+      .user {
+        margin: 10px;
+      }
+
+      .password {
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Teste de fromulário</h1>
+    <form action="form01.js" method="post">
+      <div class="user">
+        <label for="user">Usuário: </label>
+        <input
+          type="text"
+          id="user"
+          required
+          minlength="4"
+          maxlength="50"
+          placeholder="Nome do usuário"
+          autocomplete="username"
+        />
+      </div>
+      <div class="password">
+        <label for="password">Senha: </label>
+        <input
+          type="password"
+          id="password"
+          required
+          minlength="8"
+          maxlength="25"
+        />
+      </div>
+      <input type="submit" value="Enviar" id="send" />
+      <input type="reset" value="Limpar" id="clear" />
+    </form>
+  </body>
+</html>
