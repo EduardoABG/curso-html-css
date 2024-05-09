@@ -10,14 +10,10 @@
     />
     <link rel="stylesheet" href="styles/style.css" />
   </head>
-  <body>
+  <body onresize="changedSize()">
     <header>
       <h1>Meu Site</h1>
-      <span
-        id="burguer"
-        class="material-symbols-outlined"
-        onclick="clickMenu()"
-      >
+      <span id="burger" class="material-symbols-outlined" onclick="clickMenu()">
         menu
       </span>
       <menu id="menu">
@@ -115,11 +111,16 @@
       </article>
     </main>
     <script>
+      const menu = document.getElementById("menu");
       function clickMenu() {
-        const menu = document.getElementById("menu");
         if (menu.style.display === "none") {
           menu.style.display = "block";
         } else menu.style.display = "none";
+      }
+
+      function changedSize() {
+        if (window.innerWidth >= 768) menu.style.display = "block";
+        else menu.style.display = "none";
       }
     </script>
   </body>

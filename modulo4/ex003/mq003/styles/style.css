@@ -24,7 +24,7 @@ h1 {
   padding: 10px;
 }
 
-#burguer {
+#burger {
   background-color: black;
   color: white;
   display: block;
@@ -35,7 +35,7 @@ h1 {
   width: 100%;
 }
 
-#burguer:hover {
+#burger:hover {
   background-color: white;
   color: black;
 }
@@ -101,7 +101,7 @@ main p {
     margin-right: 5px;
   }
 
-  #burguer {
+  #burger {
     display: none;
   }
 }
