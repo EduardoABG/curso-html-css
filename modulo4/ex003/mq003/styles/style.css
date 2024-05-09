@@ -80,7 +80,12 @@ main p {
   text-align: justify;
   text-indent: 15px;
 }
+
 @media screen and (min-width: 768px) {
+  html {
+    width: 100%;
+  }
+
   menu {
     display: block;
   }
