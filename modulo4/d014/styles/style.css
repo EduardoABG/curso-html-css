@@ -1,0 +1,202 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #5f2c82;
+  width: 100vw;
+  height: 100vh;
+}
+
+main {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+#login {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+  background-color: white;
+  width: 250px;
+  height: 515px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.45);
+  transform: translate(-50%, -50%);
+  transition: width 0.3s, height 0.3s;
+  transition-timing-function: ease, ease;
+  transition-timing-function: ease;
+}
+
+#image {
+  display: block;
+  background: #5f2c82 url(../images/metal.jpg) no-repeat;
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-size: auto;
+  background-size: cover;
+  background-position: left bottom;
+  height: 200px;
+}
+
+h1 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#form {
+  padding: 8px;
+}
+
+p {
+  font-size: 0.8em;
+  text-align: start;
+}
+
+form {
+  margin-top: 5px;
+}
+
+div#email-field,
+div#password-field {
+  background-color: #5f2c82;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  width: 230px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input#email,
+input#password {
+  border-radius: 8px;
+  height: 38px;
+  background-color: #94cfcd;
+  text-indent: 10px;
+}
+
+input#email:focus,
+input#password:focus {
+  background-color: white;
+}
+
+span {
+  color: white;
+  margin: 3px;
+}
+
+button {
+  width: 230px;
+  height: 40px;
+  background: #53aaa7;
+  color: white;
+  font-weight: 500;
+  border-radius: 5px;
+  border: none;
+}
+
+button:hover {
+  background-color: #2d6462;
+}
+
+a.forgot-pass {
+  text-decoration: none;
+  color: #2d6462;
+  border-radius: 5px;
+  border: 1px solid #2d6462;
+  width: 230px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-top: 5px;
+}
+
+a.forgot-pass span {
+  color: #2d6462;
+}
+
+a.forgot-pass:hover {
+  background-color: #6ad6d2d3;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background-image: linear-gradient(to bottom, #5f2c82, #49a09d);
+  }
+
+  input#email,
+  input#password {
+    width: 100%;
+  }
+
+  div#email-field,
+  div#password-field,
+  button,
+  a.forgot-pass {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  #login {
+    width: 80vw;
+    height: 280px;
+  }
+
+  #image {
+    float: left;
+    width: 30%;
+    height: 100%;
+  }
+
+  #form {
+    width: 70%;
+    float: right;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #login {
+    width: 95vw;
+    height: 350px;
+  }
+  #image {
+    float: right;
+    width: 50%;
+    height: 100%;
+  }
+
+  #form {
+    width: 50%;
+    float: left;
+  }
+
+  p {
+    margin: 30px 0 30px 0;
+    font-size: 1.05em;
+    font-weight: 500;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  #login {
+    height: 350px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #login {
+    width: 950px;
+  }
+}
